@@ -7,9 +7,10 @@
 </head>
 <body>
   <header class="header">
+
     <div class="scene">
-      <div class="layer-bg" data-depth="0.3" >
-    </div>
+      <div class="layer-bg" data-depth="0.3" ></div>
+      <img src="./assets/images/comet.png" alt="comet" class="comet">
     <div data-depth="0.6"><img class="layer-1" src="./assets/images/Layer-0.png" alt=""></div>
       <div data-depth="0.9"><img class="layer-2" src="./assets/images/Layer-1.png" alt=""></div>
       <div data-depth="1.2"><img class="layer-3"src="./assets/images/Layer-2.png" alt=""></div>
@@ -17,10 +18,10 @@
     <div class="container">
       <div class="header__nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">Кейсы</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Наши клиенты</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Вакансии</a></li>
+          <li class="nav__item"><a href="#cases" class="nav__link">Кейсы</a></li>
+          <li class="nav__item"><a href="#our-clients" class="nav__link">Наши клиенты</a></li>
+          <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
+          <li class="nav__item"><a href="#vacancies" class="nav__link">Вакансии</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li> 
         </ul>
         <div class="header__achievements">
@@ -45,7 +46,7 @@
     </div>
   </header>
   
-  <div class="cases">
+  <div class="cases" id="cases">
     <div class="container">
       <div class="cases__wrapper">
         <div class="cases__active">
@@ -104,7 +105,7 @@
     </div>
   </div>
 
-  <div class="our-clients">
+  <div class="our-clients" id="our-clients">
     <div class="container">
       <div class="our-clients__wrapper">
         <div class="our-clients__title title">Наши клиенты</div>
@@ -118,7 +119,7 @@
     </div>
   </div>
 
-  <div class="reviews">
+  <div class="reviews" id="reviews">
     <div class="container">
       <div class="reviews__wrapper">
         <div class="reviews__title title">Отзывы</div>
@@ -242,7 +243,7 @@
     </div>
   </div>
 
-  <div class="vacancies">
+  <div class="vacancies" id="vacancies">
     <div class="container">
       <div class="vacancies__wrapper">
         <div class=" __title title">Вакансии</div>
@@ -307,10 +308,10 @@
             меню
           </div>
           <ul class="footer__list">
-            <li class="footer__item">Кейсы</li>
-            <li class="footer__item">Наши клиенты</li>
-            <li class="footer__item">Отзывы</li>
-            <li class="footer__item">Вакансии</li>
+            <li class="footer__item"> <a href="#cases">Кейсы</a> </li>
+            <li class="footer__item"> <a href="#our-clients">Наши клиенты</a> </li>
+            <li class="footer__item"> <a href="#reviews">Отзывы</a> </li>
+            <li class="footer__item"> <a href="#vacancies">Вакансии</a> </li>
             <li class="footer__item">Контакты</li>
           </ul>
         </div>
