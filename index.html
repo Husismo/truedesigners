@@ -7,16 +7,21 @@
 <script defer src="main.bundle.js"></script></head>
 <body>
   <header class="header">
-
     <div class="scene">
       <div class="layer-bg" data-depth="0.3" ></div>
       <img src="assets/comet.png" alt="comet" class="comet">
-    <div data-depth="0.6"><img class="layer-1" src="assets/Layer-0.png" alt=""></div>
-      <div data-depth="0.9"><img class="layer-2" src="assets/Layer-1.png" alt=""></div>
-      <div data-depth="1.2"><img class="layer-3"src="assets/Layer-2.png" alt=""></div>
+      <div data-depth="0.6" class="layer-1__wrapper">
+        <div class="layer-1"></div>
+      </div>
+      <div data-depth="0.9" class="layer-2__wrapper">
+        <div class="layer-2"></div>
+      </div>
+      <div data-depth="1.2" class="layer-3__wrapper">
+        <div class="layer-3"></div>
+      </div>
     </div>
     <div class="container">
-      <div class="header__nav">
+      <nav class="header__nav">
         <ul class="nav__list">
           <li class="nav__item"><a href="#cases" class="nav__link">Кейсы</a></li>
           <li class="nav__item"><a href="#our-clients" class="nav__link">Наши клиенты</a></li>
@@ -28,14 +33,14 @@
           <a href="#" class="achievements__text">наши достижения</a>
           <img src="assets/icon-achievement.png" alt="" class="icon__achievements">
         </div>
-      </div>
+      </nav>
       <div class="header__content">
         <div class="header__logo">
           <img src="assets/logo.png" alt="header-logo" class="logo__img">
         </div>
         <div class="header__text">
-          <img src="assets/corner.svg" alt="" class="header__corner right__corner">
-          <img src="assets/corner.svg" alt="" class="header__corner left__corner">
+          <img src="assets/corner.svg" alt="left corner" class="header__corner right__corner">
+          <img src="assets/corner.svg" alt="right corner" class="header__corner left__corner">
           <div class="header__paragraphs">
             <p>Мы занимаемся проектной заказной разработкой и технической поддержкой сайтов. </p> 
             <p>Специализируемся на разработке сложных, высокотехнологичных решений для бизнеса</p>  
@@ -57,7 +62,6 @@
             <div class="active__description">Описание описание  описание описание описание описание описание описание описание описание описание описание описание описание описание</div>
           </div>
         </div>
-
         <div class="cases__list">
           <div class="list__title title">
             Кейсы
